@@ -60,7 +60,6 @@ class App extends React.Component {
   }
 
   deleteNote = (noteId) => {
-    console.log(noteId);
     const newNotes = this.state.notes.filter((note) => note.id !== noteId);
     this.props.history.push("/");
     this.setState({
