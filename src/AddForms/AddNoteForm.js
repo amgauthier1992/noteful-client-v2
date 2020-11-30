@@ -98,7 +98,7 @@ class AddNoteForm extends React.Component {
 
   validateFolderSelect() {
     const folderid = this.state.folder.value;
-    if (folderid.trim() === "" || folderid === "...") {
+    if (folderid === null || folderid === "...") {
       return "You must specify an existing folder to store this new note";
     }
   }
